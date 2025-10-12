@@ -1,10 +1,17 @@
 const $btn = document.getElementById('btn-kick');
+сonst $mybtn = document.getElementById('btn-kick1');
+const $myBtn = document.getElementById('btn-kick1');
 const character = {
     name: 'Pikachu',
     defaultHP: 100,
     damageHP: 90,
     elHP: document.getElementById('health-character'),
-    elProgressbar: document.getElementById('progressbar-character')
+    elProgressbar: document.getElementById('progressbar-character'),
+    renderHPLife: renderHPLife,
+    renderHP: renderHP,
+    startHP: startHP,
+    changeHP:changeHP,
+    mychangeHP: mychangeHP,
 }
 
 const enemy = {
@@ -12,7 +19,12 @@ const enemy = {
     defaultHP: 100,
     damageHP: 100,
     elHP: document.getElementById('health-character'),
-    elProgressbar: document.getElementById('progressbar-enemy')
+    elProgressbar: document.getElementById('progressbar-enemy'),
+    renderHPLife: renderHPLife,
+    renderHP: renderHP,
+    startHP: startHP,
+    changeHP:changeHP,
+    mychangeHP: mychangeHP,
 }
 
 $btn.addEventListener('click', function () {
@@ -53,5 +65,6 @@ function changeHP(count, person) {
 function random(num) {
     return Math.ceil(Math.random() * num);
 }
+
 
 init();
