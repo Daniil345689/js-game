@@ -7,6 +7,7 @@ const character = {
     damageHP: 90,
     elHP: document.getElementById('health-character'),
     elProgressbar: document.getElementById('progressbar-character'),
+    renderProgressbarHP: renderProgressbarHP,
     renderHPLife: renderHPLife,
       renderHP: renderHP,
       startHP: startHP,
@@ -80,5 +81,6 @@ function changeHP(count) {
 function random(num) {
     return Math.ceil(Math.random() * num);
 }
+
 
 init();
