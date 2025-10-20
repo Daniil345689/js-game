@@ -22,6 +22,7 @@ const enemy = {
     damageHP: 100,
     elHP: document.getElementById('health-enemy'),
     elProgressbar: document.getElementById('progressbar-enemy'),
+     renderProgressbarHP: renderProgressbarHP,
      renderHPLife: renderHPLife,
      renderHP: renderHP,
      startHP: startHP,
@@ -84,3 +85,4 @@ function random(num) {
 
 
 init();
+
